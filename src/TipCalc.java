@@ -4,6 +4,7 @@ public class TipCalc {
     static public void main(String[] args){
         Scanner s = new Scanner(System.in);
 
+        System.out.println("______________________________________");
         System.out.print("Input the total bill: ");
         double totBill = s.nextDouble();                                                    //saves the total bill
         System.out.print("Input the tip percentage (without %): ");
@@ -16,10 +17,12 @@ public class TipCalc {
         double tipPerPson = totTip/numPpl;                                                  //total tip per person
         double totPerPson = totBill/numPpl;                                                 //total cost per person
 
-        System.out.println("-------------------------------------");
+        //the "%.2f\n rounds and formats to the hundreths place
+        System.out.println("______________________________________");
         System.out.printf("Total Tip Amount: $%.2f\n", totTip);
         System.out.printf("Total Bill With Tip: $%.2f\n", totBill);
         System.out.printf("Tip Per Person: $%.2f\n", tipPerPson);
         System.out.printf("Total Cost Per Person: $%.2f\n", totPerPson);
+        System.out.println("______________________________________");
     }
 }
