@@ -17,9 +17,9 @@ public class TipCalc {
         double totPerPson = totBill/numPpl;                                                 //total cost per person
 
         System.out.println("-------------------------------------");
-        System.out.println("Total Tip Amount: $" + totTip);
-        System.out.println("Total Bill With Tip: $" + totBill);
-        System.out.println("Tip Per Person: $" + tipPerPson);
-        System.out.println("Total Cost Per Person: $" + totPerPson);
+        System.out.printf("Total Tip Amount: $%.2f\n", totTip);
+        System.out.printf("Total Bill With Tip: $%.2f\n", totBill);
+        System.out.printf("Tip Per Person: $%.2f\n", tipPerPson);
+        System.out.printf("Total Cost Per Person: $%.2f\n", totPerPson);
     }
 }
